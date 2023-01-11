@@ -54,7 +54,7 @@ train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
 # d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 #brief version
-net = nn.Sequential(nn.Flatten()+, nn.Linear(784, 256), 
+net = nn.Sequential(nn.Flatten()+ nn.Linear(784, 256), 
                     nn.ReLU(),
                     nn.Dropout(dropout1), 
                     nn.Linear(256, 256),
